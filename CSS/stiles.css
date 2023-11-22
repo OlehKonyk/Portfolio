@@ -163,6 +163,7 @@ padding: auto;
 }
 .my-photo {
   margin: 24px;
+  border-radius: 7px;
 }
 
 .contacts-container,
