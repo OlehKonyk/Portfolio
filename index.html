@@ -25,69 +25,53 @@
           <h1 class="my-name">Oleh Konyk</h1>
 
           <p class="my-descr">
-            Hi, i'm quietly confident, naturally curious, and perpetually working yong developer. 
-Wish to begin my journey in new for me, but at the same time interesting profession.
+            Hi, I'm quietly confident, naturally curious, and perpetually working young developer. 
+            Wish to begin my journey in a new, but at the same time interesting profession.
           </p>
         </div>
 
         <!-- My Projects -->
-
         <div class="projects-container">
           <h3 class="mein-cottent-title">Projects</h3>
-
-          <ol class="project-list">
+          <ul class="project-list">
             <li class="project-item">
-              <a href="https://voluble-phoenix-a15d87.netlify.app/" target="_blank" class="project-linc"
-                >My resume</a
-              >
-              <span class="project-descr"
-                >......................[ HTML5, CSS3 ]</span
-              >
+              <a href="https://voluble-phoenix-a15d87.netlify.app/" target="_blank" class="project-link">My resume</a>
+              <span class="project-descr"> HTML5, CSS3, JavaScript </span>
             </li>
             <li class="project-item">
-              <a href="https://tiny-pudding-5e6dc5.netlify.app/" target="_blank" class="project-linc"
-                >Banderogus</a
-              ><span class="project-descr">.....................[HTML5, CSS3, JavaScript ]</span>
+              <a href="https://tiny-pudding-5e6dc5.netlify.app/" target="_blank" class="project-link">Banderogus</a>
+              <span class="project-descr">HTML5, CSS3, JavaScript </span>
             </li>
-          </ol>
+          </ul>
         </div>
 
         <!-- Work exp -->
-
         <div class="work-exp-container">
           <h3 class="mein-cottent-title">Work Experience</h3>
           <!-- comp 1 -->
-          <div  class="work-exp-plase">
+          <div class="work-exp-plase">
             <h4 class="work-exp-position">Pediatrician <span class="work-exp-compani">City Children's Polyclinic</span></h4>
             <p class="work-period">August 2018 - up to now | Ukraine</p>
             <ul class="work-duties-list">
-              <li class="work-duties">
-                Monitored the patients' condition.
-              </li>
-              <li class="work-duties">Work with medical documentation in the electronic healthcare system.</li>
+              <li class="work-duties">Monitored the patients' condition.</li>
+              <li class="work-duties">Worked with medical documentation in the electronic healthcare system.</li>
             </ul>
           </div>
           <!-- comp 2 -->
           <div class="work-exp-plase">
             <h4 class="work-exp-position">An ultrasound doctor <span class="work-exp-compani">City Children's Polyclinic</span></h4>
             <p class="work-period">August 2022 - up to now | Ukraine</p>
-
             <ul class="work-duties-list">
-              <li class="work-duties">
-            Uses imaging equipment and soundwaves to form images of many parts of the body.        
-              </li class="work-duties">
-              
+              <li class="work-duties">Used imaging equipment and soundwaves to form images of many parts of the body.</li>
             </ul>
           </div>
-          <!-- comp 3 -->
         </div>
+
         <!-- Education -->
         <div>
           <h3 class="mein-cottent-title">Education</h3>
           <h4>
-            <a href="https://ifnmu.edu.ua/en/" class="Education-compani" target="_blank"
-              >Ivano-Frankivsk National Medical University</a
-            >
+            <a href="https://ifnmu.edu.ua/en/" class="Education-compani" target="_blank">Ivano-Frankivsk National Medical University</a>
           </h4>
           <h4 class="Education">Pediatric</h4>
           <p class="Education-period">September 2010 - June 2016 | Ukraine</p>
@@ -97,27 +81,26 @@ Wish to begin my journey in new for me, but at the same time interesting profess
       <aside class="sidebar">
         <img src="./img/MyPhoto.jpg" alt="My photo" width="300" class="my-photo" />
         <!-- contacts -->
-
+        
         <div class="contacts-container">
-          <h3 class=".sidebar-title">Contacts</h3>
-          <p class="cotnacts-item">
-            <span class="contact-tipe"> C: </span>
-            <a href="tel:+380976275596" class="contacts-nomber"
-              >+38 097 62 75 596</a
-            >
-          </p>
-          <p class="cotnacts-item">
-            <span class="contact-tipe"> E: </span>
-            <a href="mailto:drmom4ik@gmail.com" class="contacts-mail" target="_blank"
-              >drmom4ik@gmail.com </a
-            >
-          </p>
-        </div>
+          <h3 class="sidebar-title">Contacts</h3>
+          <div class="buttons-container">
+            <button id="phoneButton" 
+            class="contact-button" 
+            onmouseover="changePhoneText()" 
+            onmouseout="restorePhoneText()">Call Me
+            </button>
+            <button id="emailButton" 
+            class="contact-button" 
+            onmouseover="changeEmailText()" 
+            onmouseout="restoreEmailText()">Send Email
+            </button>
+          </div>
+      </div>
 
         <!-- Tech Skills -->
-
         <div class="tech-skills-container">
-          <h3 class=".sidebar-title">Tech Skills</h3>
+          <h3 class="sidebar-title">Tech Skills</h3>
           <ul class="skills-list">
             <li class="skills-list-items">
               <span class="skills-list-text">HTML5</span>
@@ -139,7 +122,7 @@ Wish to begin my journey in new for me, but at the same time interesting profess
 
         <!-- Soft Skills -->
         <div class="soft-skills-container">
-          <h3 class=".sidebar-title">Soft Skills</h3>
+          <h3 class="sidebar-title">Soft Skills</h3>
           <ul class="skills-list">
             <li class="skills-list-items">
               <span class="skills-list-text">Scrum</span>
@@ -157,5 +140,6 @@ Wish to begin my journey in new for me, but at the same time interesting profess
         </div>
       </aside>
     </div>
+    <script src="./js/index.js"></script>
   </body>
 </html>

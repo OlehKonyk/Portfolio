@@ -56,35 +56,53 @@ padding: auto;
 }
 /* projects */
 .project-item {
-  color: #000;
-  font-size: 14px;
+  
+  font-size: 12px;
   font-style: normal;
   font-weight: 700;
   line-height: 24px;
+  position: relative;
+  text-decoration: none;
+  color: #4B0082;
+  display: inline-block;
+  border: 2px solid #4B0082;
+  border-radius: 12px;
+  padding: 4px 8px;
 }
 .project-list {
-  padding: 0 0 0 12px;
-  margin: 0 0 24px 0;
+  list-style: none;
+  padding: 0 4px;
+  margin: 4px;
+  display: flex; 
+  font-size:20px;
+  width: 100%;
+  justify-content: space-around;
 }
 .projects-container {
   margin-bottom: 48;
 }
 .project-descr {
-  color: #595959;
-  font-size: 14px;
+   font-size: 8px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
+  color: #682c92;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  padding: 4px;
+  border: 2px solid #4B0082;
+  border-radius: 12px;
+  z-index: 1;
+  max-height: 24px;
+  white-space: nowrap;
+}
+.project-item:hover .project-descr {
+  opacity: 1;
 }
 
-.project-linc {
-  color: #f3251e;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  text-decoration: none;
-}
 /* work-exp */
 
 .work-exp-container {
@@ -103,7 +121,7 @@ padding: auto;
 }
 
 .work-exp-compani {
-  color: #853ac6;
+  color: #4B0082;
 }
 .work-period {
   color: #a8a8a8;
@@ -128,7 +146,7 @@ padding: auto;
 /* Education */
 
 .Education-compani {
-  color: #46e671;
+  color: #4B0082;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -166,7 +184,7 @@ padding: auto;
   border-radius: 7px;
 }
 
-.contacts-container,
+
 .tech-skills-container,
 .soft-skills-container {
   margin: 48px 0 0 40px;
@@ -180,33 +198,36 @@ padding: auto;
   margin-bottom: 8px;
 }
 /* contacts */
-.contact-tipe {
-  color: #161d2a;
-  font-size: 14px;
+
+.contacts-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 24px;
+  position: relative;
+}
+.sidebar-title {
+  margin-bottom: 10px; 
+}
+.buttons-container {
+  display: flex;
+  gap: 24px; 
+  justify-content: center;
+}
+.contact-button {
+  padding: 4px 12px;
+  cursor: pointer;
+  margin-right: 10px;
+  background: linear-gradient(to bottom, #5affd0 0%, #fcfefe 96.21%);
+  font-size: 12px;
   font-style: normal;
   font-weight: 700;
   line-height: 24px;
-  margin-right: 8px;
-}
-.cotnacts-item {
-  margin: 0;
-}
-
-.contacts-mail {
-  color: #f3251e;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  text-decoration-line: underline;
-}
-.contacts-nomber {
-  color: #46e671;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  text-decoration: none
+  position: relative;
+  text-decoration: none;
+  color: #4B0082;
+  border: 2px solid #4B0082;
+  border-radius: 12px;
 }
 
 /* skills */
